@@ -49,7 +49,7 @@
 }
 
 :root {
-  /* --radius: 0.625rem; */
+  --radius: 0.625rem;
   /* --background: oklch(1 0 0); */
   /* --foreground: oklch(0.145 0 0); */
   /* --card: oklch(1 0 0);
@@ -108,12 +108,12 @@
   --glow-accent: 0 0 15px rgba(236, 72, 153, 0.15);
 
   /* Border radius */
-  --radius-xs: 4px;
+  /* --radius-xs: 4px;
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 14px;
   --radius-xl: 18px;
-  --radius-2xl: 24px;
+  --radius-2xl: 24px; */
 
   /* Spacing scale */
   --spacing-xs: 0.25rem;
@@ -172,5 +172,8 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .document-input {
+    @apply outline outline-gray-300 w-full rounded-md py-1 px-1;
   }
 }
